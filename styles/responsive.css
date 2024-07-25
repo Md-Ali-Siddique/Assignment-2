@@ -1,9 +1,11 @@
-/* For Small Devices */
-
-@media screen and (min-width:0px) and (max-width:840px) {
-    body{
-        width: 100%;
-    }
+@media screen and (max-width: 840px) {
+    
+        body {
+            position: absolute;
+            overflow-x:hidden;
+            zoom: 87%;
+        }
+    
         .brand {
             font-size: 2.5rem;
             margin-left: 30px;
@@ -12,22 +14,18 @@
         .nav-items {
             display: none;
         }
-        
     
-        .nav-icon{
+        .nav-icon {
             margin-right: 50px;
             display: unset;
-        font-size: 2rem;
-        font-weight: bolder;
-        /* border: 10px solid white; */
+            font-size: 2rem;
+            font-weight: bolder;
+        }
     
-    
-        } 
-        
         .container {
             width: 100%;
-    
         }
+    
         #home {
             flex-direction: column;
             justify-content: center;
@@ -46,21 +44,18 @@
     
         .home-title span {
             font-size: 3rem;
-    
         }
-       
-        #home img {
-            margin:0 auto;
+    
+        .home-img img {
+            margin: 0 auto;
             width: 27rem;
             height: 45rem;
         }
     
         .badge2 {
-            top: 70%;
-            right:72%;
+            top: 80%;
+            right: 72%;
         }
-    
-    
     
     
         .habits {
@@ -192,8 +187,12 @@
     
     
     @media screen and (min-width:650px) and (max-width:840px){
+        body{
+            zoom: 100%;
+
+        }
         .home-title {
-            font-size: 5.3rem;
+            font-size: 4.5rem;
             font-family: "Ubuntu", sans-serif;
         }
         .home-title span {
@@ -307,7 +306,7 @@
     }
 
     .row2 {
-        grid-template-columns: 350px 180px 298px;
+        grid-template-columns: 330px 220px 278px;
         justify-content: center;
     }
 
@@ -380,12 +379,12 @@
 @media screen and (min-width:1093px) and (max-width:1490px){
 
     #home img {
-        margin-right: 0px;
+        margin-right: 30px;
         /* width: 27rem;
         height: 45rem; */
     }
     .badge1 {
-        top: 28%;
+        top: 37%;
         right: 25%;
     
     }
@@ -489,7 +488,7 @@ footer {
     }
     
     .row2 {
-        grid-template-columns: 650px 338px 500px;
+        grid-template-columns: 600px 388px 500px;
         justify-content: center;
     }
     

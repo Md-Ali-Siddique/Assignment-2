@@ -8,9 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* html{
+html{
     scroll-behavior: smooth;
-} */
+}
 
 header {
     background: linear-gradient(160deg, #111111 7%, #1D1D1D 93%);
@@ -45,8 +45,8 @@ header {
     float: right;
     /* border: 1px solid gray; */
     border-radius: 27px;
-    box-shadow: 1px 1px 1px 1px rgb(46, 43, 43);
-    border: 1px solid rgb(32, 30, 30);
+    box-shadow: 1px 1px 4px 1px rgb(95, 93, 93);
+    border: 1.6px solid rgb(32, 30, 30);
     gap: 40px;
     display: flex;
     justify-content: space-between;
@@ -138,18 +138,33 @@ header {
 }
 
 .badge2 {
-    top: 70%;
-    right:100%;
+    top: 80%;
+    right:98%;
     transform: translate(50%, -50%);
 }
 
 .badge span {
-    display: block;
-    font-size: 29px;
+    display: inline-block;
+    font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 10px;
 }
+.play-icon {
+    width: 50px; 
+    height: 50px; 
+    background-color: rgba(230, 83, 60, 1); 
+    margin: 5px 10px 5px;
+    border-radius: 50%; 
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255); 
+    font-size: 24px; 
+    cursor: pointer;
+}
+
 .p {
-    font-family: "Ubunto",sans-serif;
+    font-family: "Ubuntu",sans-serif;
     font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
@@ -197,6 +212,7 @@ header {
     padding: 110px 190px;
     background-color: #000000;
     text-align: center;
+    width: 100%;
 }
 
 .title {
@@ -211,7 +227,7 @@ font-family: "Ubuntu", sans-serif;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 90px;
 }
 
 .box h2 {
@@ -228,6 +244,7 @@ font-family: "Ubuntu", sans-serif;
 .card-section {
     padding: 20px 190px;
     background-color: #000000;
+    width: 100%;
 }
 
 .card-box {
@@ -252,6 +269,7 @@ font-family: "Ubuntu", sans-serif;
 
 .training-section {
     padding: 100px 190px;
+    width: 100%;
     background-color: #000000;
 }
 
@@ -279,7 +297,7 @@ font-family: "Ubuntu", sans-serif;
 }
 
 
-.img-background {
+.training-img-texts {
     position: absolute;
     top: 0;
     left: 0;
@@ -323,6 +341,7 @@ font-family: "Ubuntu", sans-serif;
 
 
 .bmi-section {
+    width: 100%;
     background-color: #000000;
     padding-top: 20px;
     text-align: center;
@@ -408,6 +427,7 @@ select {
 
 
 .our-team {
+    width: 100%;
     padding: 80px;
     text-align: center;
     background-color: #000000;
@@ -424,19 +444,37 @@ select {
     padding:20px 20px 20px 30px;
      gap: 20px;
     border-radius: 18px;
-    opacity: 0.8;
 }
-
-.team-img img {
+.trainer{
+    position: relative;
+}
+.trainer img {
+    opacity: 0.8;               
     border-radius: 15px;
     /* margin: 15px 0px 20px 0px; */
     width: 100%;
     height: 18.7rem;
 }
-
+.trainer-name {
+    position: absolute;
+     top:210px ;   
+    left: 0;
+    right: 0;
+    bottom:0;
+    gap: 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    flex-direction: column;
+    
+}
 footer {
     background-color: rgb(26, 25, 25);
     height: 100%;
+    width: 100%;
     padding: 75px 250px 20px 250px;
 }
 
@@ -460,7 +498,7 @@ footer {
 }
 
 .footer-title {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: #ffffff;
     font-family: "Roboto Slab", sans-serif;
     font-weight: 700;
@@ -474,7 +512,7 @@ footer {
 .footer-item ul li a {
     text-decoration: none;
     margin: 20px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 40px;
     font-family: "Roboto Slab";
     color: rgba(255, 255, 255, 0.6);
