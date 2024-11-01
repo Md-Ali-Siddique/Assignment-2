@@ -6,7 +6,6 @@
     <meta name="viewport" content="widths=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Fitness</title>
 </head>
@@ -195,11 +194,12 @@
                         <input type="text" placeholder="Age">
 
 
-                        <select name="sex" placeholder="Sex">
-                            <option value="Male">Sex</option>
+                        <select name="sex" id="sex">
+                            <option value="" disabled selected>Select your sex</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
+                        
 
                         <select id="activity-factor" name="activity-factor">
                             <option value="" disabled selected>Select an activity factor</option>
